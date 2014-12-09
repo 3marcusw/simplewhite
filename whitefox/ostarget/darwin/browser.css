@@ -36,14 +36,22 @@
 }
 
 #main-window[tabsintitlebar] > #titlebar {
-  min-height: 36px;
+  min-height: 24px;
 }
 
 #main-window[tabsintitlebar] > #titlebar > #titlebar-content > #titlebar-buttonbox-container,
 #main-window[tabsintitlebar] > #titlebar > #titlebar-content > #titlebar-secondary-buttonbox > #titlebar-fullscreen-button {
-  margin-top: 10px;
+  margin-top: 4px;
 }
 /** End titlebar **/
+
+/** hide back and forward buttons when it makes sense to do that**/
+#forward-button[disabled="true"]{
+display: none;
+}
+#back-button[disabled="true"]{
+display: none;
+}
 
 #navigator-toolbox > #toolbar-menubar {
   margin-top: 0;
