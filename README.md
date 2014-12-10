@@ -1,7 +1,7 @@
 # Simple White
 
 ![Screenshot](https://cloud.githubusercontent.com/assets/7802430/5057922/27a1813e-6d15-11e4-87f9-fd9d461d7867.png)
-
+This is a fork of Simple White intended for the mac platform and its goal is to be compact.
 **Simple White** is a cross-platform Firefox theme that aims to simplify Firefox's appearance. With simplified color scheme and translucent tabs, Simple White delivers a clean and delightful experience of using Firefox. The theme is also hosted on [addons.mozilla.org](https://addons.mozilla.org/addon/simplewhite/).
 
 ## Packaging
