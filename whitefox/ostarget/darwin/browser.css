@@ -100,6 +100,7 @@ padding-top: 0px !important;
     margin-top: 0;
 }
 
+
 /*Reduce horizontal padding of buttons icons*/
 #navigator-toolbox > #nav-bar .toolbarbutton-1:not([type=menu]):not(#back-button):not(#forward-button) > .toolbarbutton-icon,
 #navigator-toolbox > #nav-bar .toolbarbutton-1[type=menu]:not(#back-button):not(#forward-button):not(#feed-button),
@@ -108,6 +109,46 @@ padding-top: 0px !important;
 #navigator-toolbox > #nav-bar #bookmarks-menu-button > .toolbarbutton-menubutton-dropmarker > .dropmarker-icon {
 padding-left: 1px !important;
 padding-right: 1px !important}
+
+/* Private browsing indicators */
+.private-browsing-indicator,
+#main-window[inFullscreen] #TabsToolbar > .private-browsing-indicator {
+  background: url("chrome://browser/skin/privatebrowsing-mask-titlebar-XPVista7.png") no-repeat center 0px;
+  width: 40px;
+  height: 20px;
+  margin: 0 4px;
+  display: block;
+}
+
+#titlebar-secondary-buttonbox > .private-browsing-indicator {
+  position: relative;
+}
+
+#main-window:not([privatebrowsingmode=temporary]) .private-browsing-indicator,
+#main-window[privatebrowsingmode=temporary][inFullscreen] > #titlebar > #titlebar-content > #titlebar-secondary-buttonbox > .private-browsing-indicator,
+#main-window[privatebrowsingmode=temporary]:not([inFullscreen]) > #tab-view-deck > #browser-panel > #navigator-toolbox > #TabsToolbar > .private-browsing-indicator {
+  display: none;
+}
+
+@media (-moz-mac-lion-theme) {
+  #TabsToolbar > .private-browsing-indicator {
+    margin-right: -46px !important;
+  }
+
+  #main-window[privatebrowsingmode=temporary] .titlebar-placeholder[type="fullscreen-button"],
+  #main-window[privatebrowsingmode=temporary] > #titlebar > #titlebar-content > #titlebar-secondary-buttonbox > #titlebar-fullscreen-button {
+    margin-left: 0px;
+  }
+
+  #main-window[privatebrowsingmode=temporary][inFullscreen] .titlebar-placeholder[type="fullscreen-button"] {
+    display: -moz-box;
+  }
+}
+
+#TabsToolbar > .private-browsing-indicator:-moz-locale-dir(rtl) {
+  -moz-box-ordinal-group: 0;
+}
+/* End private browsing indicators */
 
 /* ::::: bookmark buttons ::::: */
 
