@@ -150,7 +150,6 @@
   text-align: start;
 }
 
-.requests-menu-domain,
 .requests-menu-security-and-domain {
   width: 14vw;
   min-width: 10em;
@@ -495,6 +494,7 @@ label.requests-menu-status-code {
 }
 
 .tabpanel-summary-value {
+  color: inherit;
   -moz-padding-start: 3px;
 }
 
@@ -577,10 +577,6 @@ label.requests-menu-status-code {
 
 #security-tabpanel {
   overflow: auto;
-}
-
-#security-error-message {
-  white-space: pre-wrap;
 }
 
 .security-warning-icon {
@@ -843,7 +839,6 @@ label.requests-menu-status-code {
     width: 30vw;
   }
 
-  .requests-menu-domain,
   .requests-menu-security-and-domain {
     width: 30vw;
   }
