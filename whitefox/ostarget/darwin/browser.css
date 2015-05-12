@@ -26,8 +26,9 @@
 
 .titlebar-placeholder[type="caption-buttons"],
 #titlebar-buttonbox {
-  margin-left: 0px;
+  margin-left: 7px;
   margin-right: 15px;
+  margin-top: 2px;
 }
 
 @media (-moz-mac-lion-theme) {
